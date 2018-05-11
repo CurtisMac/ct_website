@@ -1,7 +1,7 @@
 $($(window).scroll(function(){
   if ($(window).scrollTop() > $(window).height()/3){
-    $("#header").slideDown()
+    $(".dropDwnHeader").slideDown()
   } else {
-    $("#header").slideUp()
+    $(".dropDwnHeader").slideUp()
   }
 }))

@@ -1,21 +1,33 @@
+/*Palette
+-------------------------------------------------*/
 $color1: #db2b6b;
 $color2: #14ab9b;
 $color3: #540d6e;
 
-$color3a: #1E123D;
-$color3b: #151556;
-$color4a:#057184;
-$color4b:#057589;
-
+/*Variables
+-------------------------------------------------*/
 $shadow1: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3);
 $shadow2: 0 8px 17px 2px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.2);
 $shadow1_top: 0 -4px 5px 0 rgba(0,0,0,0.14), 0 -1px 10px 0 rgba(0,0,0,0.12), 0 -2px 4px -1px rgba(0,0,0,0.3);
 
+%sections {
+  height:100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  box-shadow: $shadow1;
+  padding: 1rem;
+  text-align: center;
+  font-family: Lato, Arial, Helvetica, sans-serif;
+}
+
+/*Global rules
+-------------------------------------------------*/
 html, body {
   margin: 0;
   padding: 0;
   font-family: Quicksand, Arial, Helvetica, sans-serif;
-  font-weight: 400;
   background-color: gray;
   color: white;
   font-size: 16px;
@@ -30,29 +42,23 @@ img {
   max-width: 100%;
 }
 
-%header-footer {
+/*Modules
+-------------------------------------------------*/
+.dropDwnHeader {
   background-color: $color3;
-}
-
-main {
-  max-width: 100%;
-}
-
-header {
-  @extend %header-footer;
   height: 3.75rem;
   width: 100%;
   position: fixed;
   box-shadow: $shadow1;
   display: none;
   
-  img {
-    max-height: 50px;
-    margin: 5px;
+  .dropDwnHeader__logo {
+    max-height: 3.125rem;
+    margin: 0.3125rem;
     vertical-align: top;
   }
 
-  h1 {
+  .dropDwnHeader__title {
     display: inline-block;
     margin: 0;
     padding: 6px;
@@ -60,24 +66,12 @@ header {
   }
 }
 
-%sections {
-  height:100vh;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  box-sizing: border-box;
-  box-shadow: $shadow1;
-  padding: 1rem;
-  text-align: center;
-  font: "Quicksand";
-}
-
-#section_0 {
+#section0 {
   @extend %sections;
   background-color: $color3;
   font-size: 2.8rem;
 
-  img {
+  .section0__logo {
     max-height: 50%;
     max-width:50%;
     margin: 5px;
@@ -85,7 +79,7 @@ header {
   }
 }
 
-#section_1 {
+#section1 {
   @extend %sections;
   background-color: black;
   background-image: url("./images/baby-499976_640.jpg");
@@ -93,25 +87,25 @@ header {
   padding-top: 4.75rem;
 }
 
-#section_2 {
+#section2 {
   @extend %sections;
   background-color: $color1;
 }
 
-#section_3 {
+#section3 {
   @extend %sections;
   background-color: $color1;
   background-image: url("./images/baby-21098_640.jpg");
   background-attachment: fixed;
 }
 
-#section_4 {
+#section4 {
   @extend %sections;
   background-color: $color2;
 }
 
 footer {
-  @extend %header-footer;
+  background-color: $color3;
   height: 60px;
   box-shadow: $shadow1_top;
 }
