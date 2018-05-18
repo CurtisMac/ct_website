@@ -36,6 +36,13 @@ html, body {
 h1 {
   font-weight: 400;
   font-family: "Butterfly Kids", cursive;
+  font-size: 5rem;
+}
+
+h2 {
+  font-weight: 400;
+  // font-family: "Butterfly Kids", cursive;
+  // font-size: 5rem;
 }
 
 img {
@@ -69,13 +76,23 @@ img {
 #section0 {
   @extend %sections;
   background-color: $color3;
-  font-size: 2.8rem;
 
   .section0__logo {
     max-height: 50%;
     max-width:50%;
     margin: 5px;
     vertical-align: top;
+  }
+
+  .section0__h1 {
+    font-size: 13vmin;
+    margin-bottom: 0;
+  }
+
+  .section0__subheading {
+    font-size: calc(0.5rem + 4.5vmin);
+    margin-top: 5px;
+    font-weight: 100;
   }
 }
 
