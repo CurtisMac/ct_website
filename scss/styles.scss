@@ -1,8 +1,8 @@
 /*Palette
 -------------------------------------------------*/
-$color1: #db2b6b;
-$color2: #14ab9b;
-$color3: #540d6e;
+$color_pink: #db2b6b;
+$color_green: #14ab9b;
+$color_purple: #540d6e;
 
 /*Variables
 -------------------------------------------------*/
@@ -22,7 +22,7 @@ $shadow1_top: 0 -4px 5px 0 rgba(0,0,0,0.14), 0 -1px 10px 0 rgba(0,0,0,0.12), 0 -
   font-family: Lato, Arial, Helvetica, sans-serif;
 }
 
-/*Global rules
+/*Global styles
 -------------------------------------------------*/
 html, body {
   margin: 0;
@@ -40,10 +40,19 @@ h1 {
 }
 
 h2 {
-  font-weight: 400;
-  // font-family: "Butterfly Kids", cursive;
-  // font-size: 5rem;
+  font-weight: 500;
+  font-family: 'Advent Pro', sans-serif;
+  font-size: 4rem;
+  margin: 0;
 }
+
+h3 {
+  font-weight: 400;
+  font-family: 'Advent Pro', sans-serif;
+  font-size: 3em;
+  margin: 0;
+}
+
 
 img {
   max-width: 100%;
@@ -52,7 +61,7 @@ img {
 /*Modules
 -------------------------------------------------*/
 .dropDwnHeader {
-  background-color: $color3;
+  background-color: $color_purple;
   height: 3.75rem;
   width: 100%;
   position: fixed;
@@ -75,7 +84,7 @@ img {
 
 #section0 {
   @extend %sections;
-  background-color: $color3;
+  background-color: $color_purple;
 
   .section0__logo {
     max-height: 50%;
@@ -86,13 +95,12 @@ img {
 
   .section0__h1 {
     font-size: 13vmin;
-    margin-bottom: 0;
+    margin-bottom: 10px;
   }
 
   .section0__subheading {
     font-size: calc(0.5rem + 4.5vmin);
     margin-top: 5px;
-    font-weight: 100;
   }
 }
 
@@ -102,27 +110,32 @@ img {
   background-image: url("./images/baby-499976_640.jpg");
   background-attachment: fixed;
   padding-top: 4.75rem;
+  // color: white;
+
+  h2 {
+    color: $color_purple;
+  }
 }
 
 #section2 {
   @extend %sections;
-  background-color: $color1;
+  background-color: $color_pink;
 }
 
 #section3 {
   @extend %sections;
-  background-color: $color1;
+  background-color: $color_pink;
   background-image: url("./images/baby-21098_640.jpg");
   background-attachment: fixed;
 }
 
 #section4 {
   @extend %sections;
-  background-color: $color2;
+  background-color: $color_green;
 }
 
 footer {
-  background-color: $color3;
+  background-color: $color_purple;
   height: 60px;
   box-shadow: $shadow1_top;
 }
