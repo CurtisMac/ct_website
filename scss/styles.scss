@@ -17,8 +17,8 @@ $shadow1_top: 0 -4px 5px 0 rgba(0,0,0,0.14), 0 -1px 10px 0 rgba(0,0,0,0.12), 0 -
   background-repeat: no-repeat;
   box-sizing: border-box;
   box-shadow: $shadow1;
-  padding: 1rem;
-  text-align: center;
+  padding: 10%;
+  text-align: left;
   font-family: Lato, Arial, Helvetica, sans-serif;
 }
 
@@ -36,13 +36,13 @@ html, body {
 h1 {
   font-weight: 400;
   font-family: "Butterfly Kids", cursive;
-  font-size: 5rem;
+  font-size: 13vmin;
 }
 
 h2 {
   font-weight: 500;
   font-family: 'Advent Pro', sans-serif;
-  font-size: 4rem;
+  font-size: calc(0.5rem + 4.5vmin);
   margin: 0;
 }
 
@@ -80,11 +80,22 @@ img {
     padding: 6px;
     font-size: 2.5rem;
   }
+  
+  @media screen and (max-width: 310px){
+   .dropDwnHeader__title {
+    font-size: 10vw;
+    }
+    .dropDwnHeader__logo {
+    max-height: 2.125rem;
+    }
+  }
 }
 
-#section0 {
+.section0 {
   @extend %sections;
   background-color: $color_purple;
+  text-align: center;
+  padding: 4.25rem;
 
   .section0__logo {
     max-height: 50%;
@@ -94,25 +105,21 @@ img {
   }
 
   .section0__h1 {
-    font-size: 13vmin;
     margin-bottom: 10px;
   }
 
   .section0__subheading {
-    font-size: calc(0.5rem + 4.5vmin);
     margin-top: 5px;
   }
 }
 
-#section1 {
+.section1 {
   @extend %sections;
   background-color: black;
   background-image: url("./images/baby-499976_640.jpg");
   background-attachment: fixed;
-  padding-top: 4.75rem;
-  // color: white;
 
-  h2 {
+  .section1__h2 {
     color: $color_purple;
   }
 }
@@ -141,7 +148,8 @@ footer {
 }
 
 // Media Queries
-@media screen and (max-width: 480px){
-  
-
+@media screen and (max-width: 310px){
+   .dropDwnHeader__title {
+    font-size: 1.5rem;
+  }
 }
