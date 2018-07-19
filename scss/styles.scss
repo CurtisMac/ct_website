@@ -2,6 +2,7 @@
 -------------------------------------------------*/
 $color_pink: #db2b6b;
 $color_green: #14ab9b;
+$color_dark_green: #10685f;
 $color_purple: #540d6e;
 
 /*Variables
@@ -42,14 +43,14 @@ h1 {
 h2 {
   font-weight: 500;
   font-family: 'Advent Pro', sans-serif;
-  font-size: calc(0.5rem + 4.5vmin);
+  font-size: calc(1rem + 4.5vmin);
   margin: 0;
 }
 
 h3 {
-  font-weight: 400;
+  font-weight: 500;
   font-family: 'Advent Pro', sans-serif;
-  font-size: 3em;
+  font-size: calc(0.5rem + 4.5vmin);
   margin: 0;
 }
 
@@ -104,7 +105,7 @@ img {
     vertical-align: top;
   }
 
-  .section0__h1 {
+  .section0__title {
     margin-bottom: 10px;
   }
 
@@ -120,7 +121,7 @@ img {
   background-attachment: fixed;
 
   .section1__h2 {
-    color: $color_purple;
+    color: $color_dark_green;
   }
 }
 
