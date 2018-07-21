@@ -117,7 +117,7 @@ img {
 .section1 {
   @extend %sections;
   background-color: black;
-  background-image: url("./images/baby-499976_640.jpg");
+  background-image: url("../images/baby-499976_640.jpg");
   background-attachment: fixed;
 
   .section1__h2 {
@@ -132,8 +132,8 @@ img {
 
 #section3 {
   @extend %sections;
-  background-color: $color_pink;
-  background-image: url("./images/baby-21098_640.jpg");
+  background-color: black;
+  background-image: url("../images/baby-21098_640.jpg");
   background-attachment: fixed;
 }
 
