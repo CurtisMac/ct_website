@@ -10,6 +10,11 @@ $color_purple: #540d6e;
 $shadow1: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3);
 $shadow2: 0 8px 17px 2px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.2);
 $shadow1_top: 0 -4px 5px 0 rgba(0,0,0,0.14), 0 -1px 10px 0 rgba(0,0,0,0.12), 0 -2px 4px -1px rgba(0,0,0,0.3);
+$text_shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
 
 %sections {
   height:100vh;
@@ -49,7 +54,7 @@ h2 {
 
 h3 {
   font-weight: 500;
-  font-family: 'Advent Pro', sans-serif;
+  font-family: 'Gaegu', cursive;
   font-size: calc(0.5rem + 4.5vmin);
   margin: 0;
 }
@@ -119,9 +124,9 @@ img {
   background-color: black;
   background-image: url("../images/baby-499976_640.jpg");
   background-attachment: fixed;
-
+  text-shadow: $text_shadow;
   .section1__h2 {
-    color: $color_dark_green;
+    color: white;
   }
 }
 
@@ -135,6 +140,7 @@ img {
   background-color: black;
   background-image: url("../images/baby-21098_640.jpg");
   background-attachment: fixed;
+  text-shadow: $text_shadow;
 }
 
 #section4 {
