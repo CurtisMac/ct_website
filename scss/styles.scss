@@ -17,7 +17,7 @@ $text_shadow:
 		1px 1px 0 #000;
 
 %sections {
-  height:100vh;
+  min-height:100vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -101,6 +101,7 @@ img {
   background-color: $color_purple;
   text-align: center;
   padding: 4.25rem;
+  height:100vh;
   
   .section0__title {
     margin-top:10px;
