@@ -177,13 +177,6 @@ img {
         animation: arrows $speed linear infinite $speed/-2;
       }
     }
-
-  // @media screen and (orientation: landscape) {
-  //   .arrows {
-  //     top:90%;
-  //     left:90%;
-  //   }
-  // }
 }
 
 .section1 {
@@ -215,18 +208,18 @@ img {
   background-color: $color_green;
 }
 
+#section5 {
+  @extend %sections;
+  background-color: black;
+  background-image: url("../images/childhood-2923988_640.jpg");
+  background-attachment: fixed;
+  text-shadow: $text_shadow;
+}
+
 footer {
   background-color: $color_purple;
   height: 60px;
   box-shadow: $shadow1_top;
 }
 
-// Media Queries
-@media screen and (max-width: 310px){
-   .dropDwnHeader__title {
-    font-size: 1.5rem;
-  }
-}
 
-/*Animations
--------------------------------------------------*/
