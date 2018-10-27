@@ -107,14 +107,48 @@ $text_shadow:
     margin: 0;
     padding: 6px;
     font-size: 2.5rem;
+    a {
+      text-decoration: none; 
+      color: white;
+    }
+  }
+
+  .dropDwnHeader__menu {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 12px;
+
+    ul {
+    display: inline;
+    list-style-type: none;
+    }
+ 
+    li {
+      display: inline;
+      padding: 0 20px 0 0;
+      font-size: 28px;
+
+    }
+
+    a {
+      text-decoration: none; 
+      color: white;
+    }
   }
   
   @media screen and (max-width: 310px){
    .dropDwnHeader__title {
-    font-size: 10vw;
+      font-size: 10vw;
     }
     .dropDwnHeader__logo {
-    max-height: 2.125rem;
+      max-height: 2.125rem;
+    }
+  }
+
+  @media screen and (max-width: 530px){
+    .dropDwnHeader__menu {
+      display: none;
     }
   }
 }
@@ -252,7 +286,7 @@ $text_shadow:
   }
 }
 
-#section4 {
+.section4 {
   @extend %sections;
   background-color: $color_green;
 }
