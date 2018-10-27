@@ -1,9 +1,61 @@
 /*Palette
 -------------------------------------------------*/
-$color_pink: #db2b6b;
-$color_green: #14ab9b;
-$color_dark_green: #10685f;
-$color_purple: #540d6e;
+$color_pink: rgb(219,43,107);
+$color_pink--opaque: rgba(219,43,107,0.6);
+$color_green: rgb(20,171,155);
+$color_green--opaque:rgba(20,171,155,0.6);
+$color_purple: rgb(84,13,110);
+$color_purple--opaque: rgba(84,13,110,0.6);
+
+/*Global styles
+-------------------------------------------------*/
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Asap', Arial, Helvetica, sans-serif;
+  background-color: gray;
+  color: white;
+  font-size: 16px;
+}
+
+h1 {
+  font-weight: 400;
+  font-family: 'Butterfly Kids', cursive;
+  font-size: 13vmin;
+}
+
+h2 {
+  font-weight: 500;
+  font-family: 'Asap', sans-serif;
+  font-size: calc(1rem + 4.5vmin);
+  margin: 0;
+}
+
+h3 {
+  font-weight: 500;
+  font-family: 'Asap', sans-serif;
+  font-size: calc(0.5rem + 4.5vmin);
+  margin: 0;
+}
+
+p {
+  font-family: 'Asap', sans-serif;
+  font-size: 19px;
+  line-height: 1.5;
+  margin: 0 0 1.3em 0;
+  margin-block-end: 1em;
+  margin-block-start: 1em;
+}
+
+li {
+  margin-bottom: 0.8em;
+  font-family: 'Asap', sans-serif;
+  font-size: 19px;
+}
+
+img {
+  max-width: 100%;
+}
 
 /*Variables
 -------------------------------------------------*/
@@ -25,42 +77,12 @@ $text_shadow:
   box-shadow: $shadow1;
   padding: 10%;
   text-align: left;
-  font-family: Lato, Arial, Helvetica, sans-serif;
 }
 
-/*Global styles
--------------------------------------------------*/
-html, body {
-  margin: 0;
-  padding: 0;
-  font-family: Quicksand, Arial, Helvetica, sans-serif;
-  background-color: gray;
-  color: white;
-  font-size: 16px;
-}
-
-h1 {
-  font-weight: 400;
-  font-family: "Butterfly Kids", cursive;
-  font-size: 13vmin;
-}
-
-h2 {
-  font-weight: 500;
-  font-family: 'Advent Pro', sans-serif;
-  font-size: calc(1rem + 4.5vmin);
-  margin: 0;
-}
-
-h3 {
-  font-weight: 500;
-  font-family: 'Gaegu', cursive;
-  font-size: calc(0.5rem + 4.5vmin);
-  margin: 0;
-}
-
-img {
-  max-width: 100%;
+%textbox {
+    max-width: 420px;
+    border-radius: 50px 50px 5px 50px;
+    overflow-wrap: break-word;
 }
 
 /*Modules
@@ -72,6 +94,7 @@ img {
   position: fixed;
   box-shadow: $shadow1;
   display: none;
+  z-index: 1;
   
   .dropDwnHeader__logo {
     max-height: 3.125rem;
@@ -184,23 +207,49 @@ img {
   background-color: black;
   background-image: url("../images/baby-499976_640.jpg");
   background-attachment: fixed;
-  text-shadow: $text_shadow;
-  .section1__h2 {
-    color: white;
+
+  .section1--textbox {
+    @extend %textbox;
+    background-color: $color_green--opaque;
+  }
+
+  .section1--text {
+    padding: 22px;
   }
 }
 
-#section2 {
+.section2 {
   @extend %sections;
   background-color: $color_pink;
 }
 
-#section3 {
+.section3 {
   @extend %sections;
   background-color: black;
   background-image: url("../images/baby-21098_640.jpg");
   background-attachment: fixed;
-  text-shadow: $text_shadow;
+
+  .section3--textbox1 {
+    @extend %textbox;
+    background-color: $color_pink--opaque;
+    border-radius: 50px 50px 50px 5px;
+    float: right;
+    margin-bottom: 60px;
+  }
+
+  .section3--textbox2 {
+    @extend %textbox;
+    background-color: $color_purple--opaque;
+    clear:both;
+  }
+
+  .section3--text {
+    padding: 22px;
+
+    p {
+      margin-block-start: 0;
+    }
+  }
 }
 
 #section4 {
@@ -214,6 +263,7 @@ img {
   background-image: url("../images/childhood-2923988_640.jpg");
   background-attachment: fixed;
   text-shadow: $text_shadow;
+  display:none;
 }
 
 footer {
