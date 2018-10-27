@@ -136,6 +136,8 @@ $text_shadow:
       color: white;
     }
   }
+
+  //Media queries for drop down header
   
   @media screen and (max-width: 310px){
    .dropDwnHeader__title {
@@ -176,7 +178,7 @@ $text_shadow:
     margin-top: 5px;
   }
 
-// Arrow animation
+// Arrow animation for section0
   $size: 15px;
   $speed: 3s;
   $peakopacity:0.7;
@@ -236,6 +238,21 @@ $text_shadow:
     }
 }
 
+//Media queries
+  @media screen 
+    and (max-height: 500px)
+    and (orientation: landscape){
+    .arrows {
+      display: none;
+    }
+  }
+
+  @media screen and (max-height: 400px){
+    .arrows {
+      display: none;
+    }
+  }
+
 .section1 {
   @extend %sections;
   background-color: black;
@@ -291,7 +308,7 @@ $text_shadow:
   background-color: $color_green;
 }
 
-#section5 {
+.section5 {
   @extend %sections;
   background-color: black;
   background-image: url("../images/childhood-2923988_640.jpg");
