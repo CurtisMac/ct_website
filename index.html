@@ -18,7 +18,7 @@
     <nav class="dropDwnHeader__menu">
       <ul>
         <li><a href="#about">About</a></li>
-        <li><a href="#about">Contact</a></li>
+        <li><a href="#contact_form">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -86,7 +86,7 @@
       <a id="about"></a>
     </section>
 
-    <section class="section4">
+    <section class="about">
 
       <h2>About me</h2>
       <p>Each woman’s birth experience is uniquely her own, it is intimate and personal. As a Doula it is a privilege
@@ -99,22 +99,25 @@
         Touch in Victoria and continue to pursue my Doula certification through Dona International.</p>
     </section>
 
-    <section class="section5">
-      <h2>Contact</h2>
-      <form name="contact" method="POST" netlify>
-        <p>
-          <label>Your Name: <input type="text" name="name" /></label>
-        </p>
-        <p>
-          <label>Your Email: <input type="email" name="email" /></label>
-        </p>
-        <p>
-          <label>Message: <textarea name="message"></textarea></label>
-        </p>
-        <div data-netlify-recaptcha></div>
-        <p>
-          <button type="submit">Send</button>
-        </p>
+    <a id="contact_form"></a>
+
+    <section class="contact">
+      <form name="contact_form" action="contact-form.php" method="POST" class="contact__form">
+
+        <h2>Contact</h2>
+
+        <input type="text" id="name" placeholder="Full Name" class="contact__input">
+
+        <input type="text" id="email" placeholder="Your email address" class="contact__input">
+
+        <textarea id="message" placeholder="Message" class="contact__input"></textarea>
+
+        <input type="button" id="submit" value="Submit" class="contact__button" />
+
+        <div id="contact_message">
+          <p>Send us a message!</p>
+        </div>
+
       </form>
     </section>
   </main>

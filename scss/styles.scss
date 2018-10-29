@@ -303,18 +303,44 @@ $text_shadow:
   }
 }
 
-.section4 {
+.about {
   @extend %sections;
   background-color: $color_green;
 }
 
-.section5 {
+.contact {
   @extend %sections;
   background-color: black;
   background-image: url("../images/childhood-2923988_640.jpg");
   background-attachment: fixed;
-  text-shadow: $text_shadow;
-  display:none;
+  
+  .contact__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: $color_purple--opaque;
+    border-radius: 50px;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  .contact__input {
+    margin: 10px 20px 10px 20px;
+    border-radius: 5px;
+    border: 1.5px solid $color_green;
+  }
+
+  .contact__button {
+    width: 80px;
+    height: 32px;
+    margin: 20px;
+    color: white;
+    background-color: $color_green;
+    border-radius: 5px;
+    border: 0;
+    text-transform: uppercase;
+  }
 }
 
 footer {
