@@ -1,16 +1,23 @@
 <?php
-if (isset($_POST['submit'])) {
-  $name = $_POST['name'];
-  $email = $_POST['email'];
-  $message = $_POST['message'];
+    date_default_timezone_set('America/Vancouver');
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
 
-  $mailTo = "cmacguitar@live.ca";
-  $subject = "A message from comfortingtouch.ca";
-  $txt = "Someone sent you a message from your website!";
-    $headers = 'From: '.$email . "\n" .
-    'Reply-To: '.$email . "\n" .
-    'X-Mailer: PHP/' . phpversion();
-
-  mail($mailTo, $subject, $message, $headers);
-}
+    $subject = "A message from comfortingtouch.ca";
+    $txt = 
+        'Name: '. $name . "\r\n" . "\r\n" .
+        'Email: '. $email . "\r\n" . "\r\n" .
+        'Date: '. date('l jS \of F Y h:i:s A') . "\r\n" . "\r\n" .
+        'Message: '. wordwrap($message, 70);
+    $headers = 
+        'From: '. $email . "\r\n" .
+        'Reply-To: '. $email . "\r\n" .
+        'X-Mailer: PHP/' . phpversion();
+    
+    if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        echo mail('cmacguitar@live.ca', $subject, $txt, $headers);
+    } else {
+        echo '<p>Please enter a valid email<p>';
+    };
 ?>
