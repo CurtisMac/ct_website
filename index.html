@@ -103,21 +103,22 @@
 
     <section class="contact">
       <form name="contact_form" action="contact-form.php" method="POST" class="contact__form">
-
         <h2>Contact</h2>
-
+        <p class="contact__label">Name:</p>
         <input type="text" id="name" placeholder="Full Name" class="contact__input">
-
+        <p class="contact__label">Email:</p>
         <input type="text" id="email" placeholder="Your email address" class="contact__input">
-
-        <textarea id="message" placeholder="Message" class="contact__input contact__input--textarea"></textarea>
-
-        <input type="button" id="submit" value="Submit" class="contact__button" />
-
-        <div id="contact_message">
-          <p>Send us a message!</p>
+        <p class="contact__label">Confirm Email:</p>
+        <input type="text" id="email2" placeholder="Your email address" class="contact__input">
+        <p class="contact__label">Message:</p>
+        <textarea id="message" placeholder="Enter a message" class="contact__input contact__input--textarea"></textarea>
+        <div class="contact__container--button">
+          <input type="button" id="submit" value="Submit" class="contact__button" />
+          <div class="contact__loader"></div>
         </div>
-
+        <div class="contact_notification">
+          <p>Send me a message!</p>
+        </div>
       </form>
     </section>
   </main>

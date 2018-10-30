@@ -16,7 +16,11 @@
         'X-Mailer: PHP/' . phpversion();
     
     if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        echo mail('cmacguitar@live.ca', $subject, $txt, $headers);
+        if(mail('cmacguitar@live.ca', $subject, $txt, $headers)) {
+            echo '<p>Success! I\'ll be in touch shortly<p>';
+        } else {
+            echo '<p>Sorry, we encountered a server error!<p>';
+        };
     } else {
         echo '<p>Please enter a valid email<p>';
     };
