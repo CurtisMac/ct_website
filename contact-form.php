@@ -13,7 +13,7 @@
     return $data;
   }
 
-    $mailTo = 'noreen@comfortingtouch.ca'
+    $mailTo = 'email@example.com'
     $subject = "A message from comfortingtouch.ca";
     $txt = 
         'Name: '. $name . "\r\n" . "\r\n" .
