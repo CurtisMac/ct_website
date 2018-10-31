@@ -238,7 +238,7 @@ $text_shadow:
     }
 }
 
-//Media queries
+//Media queries for section0
   @media screen 
     and (max-height: 500px)
     and (orientation: landscape){
@@ -343,7 +343,11 @@ $text_shadow:
     font-size: 16px;
   }
 
-  .contact__container--button {
+  .g-recaptcha {
+    margin: 0 auto;
+  }
+
+  .contact__container--button-loader {
     text-align: left;
   }
 
