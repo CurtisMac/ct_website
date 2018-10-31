@@ -144,9 +144,13 @@ $text_shadow:
   }
 
   .dropDwnHeader__mobile-menu {
-    display: block;
-    background-color: black;
+    display: none;
+    position: absolute;
+    top:60px;
+    width:100%;
+    background-color: $color_purple;
     text-align: center;
+    box-shadow: $shadow1;
     
     ul {
       list-style-type: none;
@@ -185,6 +189,12 @@ $text_shadow:
     }
     .dropDwnHeader__mobile-menu--img {
       display: inline-block;
+    }
+  }
+
+  @media screen and (min-width: 530px){
+    .dropDwnHeader__mobile-menu--container {
+      display: none;
     }
   }
 }
