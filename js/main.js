@@ -50,4 +50,17 @@ $(
       })
     }
   }),
+  //Smooth Scrolling
+  $("a").click(function () {
+    if (this.hash !== "") {
+      var hash = this.hash;
+      event.preventDefault();
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function () {
+        window.location.hash = hash
+      })
+    }
+  })
 )
+

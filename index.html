@@ -15,10 +15,11 @@
 <body>
   <header class="dropDwnHeader">
     <img class="dropDwnHeader__logo" src="images/ct_logo.png" alt="birds logo">
-    <h1 class="dropDwnHeader__title"><a href="#top">Comforting Touch</a></h1>
+    <h1 class="dropDwnHeader__title"><a href="#landing">Comforting Touch</a></h1>
     <nav class="dropDwnHeader__menu">
       <ul>
-        <li><a href="#about">About</a></li>
+        <li><a href="#about">About /</a></li>
+        <li><a href="#services">Services /</a></li>
         <li><a href="#contact_form">Contact</a></li>
       </ul>
     </nav>
@@ -26,26 +27,26 @@
     <div class="dropDwnHeader__mobile-menu--container">
       <nav class="dropDwnHeader__mobile-menu">
         <ul>
-          <li><a class="dropDwnHeader__mobile-menu--a" href="#about">about /</a></li>
-          <li><a class="dropDwnHeader__mobile-menu--a" href="#contact_form">contact</a></li>
+          <li><a href="#about" class="dropDwnHeader__mobile-menu--a">about /</a></li>
+          <li><a href="#services" class="dropDwnHeader__mobile-menu--a">services /</a></li>
+          <li><a href="#contact_form" class="dropDwnHeader__mobile-menu--a">contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main>
-    <a id="top"></a>
-    <section class="section0">
-      <h1 class="section0__title">Comforting Touch</h1>
-      <h3 class="section0__subheading">doula services</h3>
-      <img class="section0__logo" src="images/ct_logo.png" alt="birds logo">
-      <h3 class="section0__subheading">nanaimo, bc, canada</h3>
+    <a id="landing"></a>
+    <section class="landing">
+      <h1 class="landing__title">Comforting Touch</h1>
+      <h3 class="landing__subheading">doula services</h3>
+      <img class="landing__logo" src="images/ct_logo.png" alt="birds logo">
+      <h3 class="landing__subheading">nanaimo, bc, canada</h3>
       <a href="#section1">
         <div class="arrows"></div>
       </a>
+      <a id="section1"></a>
     </section>
-
-    <a id="section1"></a>
 
     <section class="section1">
 
@@ -58,9 +59,10 @@
           <p style="text-align:center">-www.dona.org</p>
         </div>
       </div>
+      <a id="services"></a>
     </section>
 
-    <section class="section2">
+    <section class="services">
       <h2>What does a doula do?</h2>
       <p>A doula provides compassionate, comforting care, before, during and after you give birth.</p>
       <ul>
@@ -79,16 +81,16 @@
       </ul>
     </section>
 
-    <section class="section3">
-      <div class="section3--textbox1">
-        <div class="section3--text">
+    <section class="quotes">
+      <div class="quotes--textbox1">
+        <div class="quotes--text">
           <p> “Just as a woman's heart knows how and when to pump, her lungs to inhale, and her hand to pull back from
             fire, so she knows when and how to give birth."</p>
           <p style="text-align:center">- Virginia Di Orio</p>
         </div>
       </div>
-      <div class="section3--textbox2">
-        <div class="section3--text">
+      <div class="quotes--textbox2">
+        <div class="quotes--text">
           <p>“I felt so empowered as a woman through my birth experience”</p>
           <p style="text-align:center">- Client</p>
         </div>
@@ -107,11 +109,11 @@
         desires as they bring their precious babies to life.</p>
       <p>Recently I completed the Dona birth doula training at Mothering
         Touch in Victoria and continue to pursue my Doula certification through Dona International.</p>
+      <a id="contact_form"></a>
     </section>
 
-    <a id="contact_form"></a>
-
     <section class="contact">
+
       <form name="contact_form" action="contact-form.php" method="POST" class="contact__form">
         <h2>Contact</h2>
         <p class="contact__label">Name:</p>
@@ -135,6 +137,7 @@
   </main>
 
   <footer>
+    <a href="http://google.ca">Google</a>
   </footer>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>

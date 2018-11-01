@@ -116,7 +116,7 @@ $text_shadow:
   .dropDwnHeader__menu {
     display: inline-block;
     position: absolute;
-    right: 0;
+    right: 10px;
     top: 12px;
 
     ul {
@@ -126,7 +126,7 @@ $text_shadow:
  
     li {
       display: inline;
-      padding: 0 20px 0 0;
+      padding: 0 4px 0 0;
       font-size: 28px;
     }
 
@@ -183,7 +183,7 @@ $text_shadow:
     }
   }
 
-  @media screen and (max-width: 530px){
+  @media screen and (max-width: 750px){
     .dropDwnHeader__menu {
       display: none;
     }
@@ -192,37 +192,37 @@ $text_shadow:
     }
   }
 
-  @media screen and (min-width: 530px){
+  @media screen and (min-width: 750px){
     .dropDwnHeader__mobile-menu--container {
       display: none;
     }
   }
 }
 
-.section0 {
+.landing {
   @extend %sections;
   background-color: $color_purple;
   text-align: center;
   padding: 4.25rem;
   height:100vh;
   
-  .section0__title {
+  .landing__title {
     margin-top:10px;
     margin-bottom: 10px;
   }
 
-  .section0__logo {
+  .landing__logo {
     max-height: 50%;
     max-width:50%;
     margin: 5px;
     vertical-align: top;
   }
 
-  .section0__subheading {
+  .landing__subheading {
     margin-top: 5px;
   }
 
-// Arrow animation for section0
+// Arrow animation for landing
   $size: 15px;
   $speed: 3s;
   $peakopacity:0.7;
@@ -282,7 +282,7 @@ $text_shadow:
     }
 }
 
-//Media queries for section0
+//Media queries for landing page
   @media screen 
     and (max-height: 500px)
     and (orientation: landscape){
@@ -313,18 +313,18 @@ $text_shadow:
   }
 }
 
-.section2 {
+.services {
   @extend %sections;
   background-color: $color_pink;
 }
 
-.section3 {
+.quotes {
   @extend %sections;
   background-color: black;
   background-image: url("../images/baby-21098_640.jpg");
   background-attachment: fixed;
 
-  .section3--textbox1 {
+  .quotes--textbox1 {
     @extend %textbox;
     background-color: $color_pink--opaque;
     border-radius: 50px 50px 50px 5px;
@@ -332,13 +332,13 @@ $text_shadow:
     margin-bottom: 60px;
   }
 
-  .section3--textbox2 {
+  .quotes--textbox2 {
     @extend %textbox;
     background-color: $color_purple--opaque;
     clear:both;
   }
 
-  .section3--text {
+  .quotes--text {
     padding: 22px;
 
     p {
