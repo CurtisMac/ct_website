@@ -17,11 +17,11 @@ $(
   }),
   //Contact form functionality
   $("#submit").click(function () {
-    var name = $("#name").val();
-    var email = $("#email").val();
-    var email2 = $("#email2").val();
-    var message = $("#message").val();
-    var recaptcha = $("#g-recaptcha-response").val();
+    let name = $("#name").val();
+    let email = $("#email").val();
+    let email2 = $("#email2").val();
+    let message = $("#message").val();
+    let recaptcha = $("#g-recaptcha-response").val();
     $(".contact__input").css("border", "1.5px solid rgb(20,171,155)")
     $(".contact_notification").html("<p>Send me a message!</p>")
 
@@ -53,14 +53,15 @@ $(
   //Smooth Scrolling
   $("a").click(function () {
     if (this.hash !== "") {
-      var hash = this.hash;
-      event.preventDefault();
+      let hash = this.hash
+      event.preventDefault()
       $('html, body').animate({
-        scrollTop: $(hash).offset().top
+        scrollTop: $(hash).offset().top 
       }, 800, function () {
         window.location.hash = hash
-      })
+      }
+)
     }
   })
 )
-
+ 

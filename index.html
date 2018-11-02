@@ -20,38 +20,40 @@
       <ul>
         <li><a href="#about">About /</a></li>
         <li><a href="#services">Services /</a></li>
-        <li><a href="#contact_form">Contact</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <img src="images/hamburger.svg" alt="hamburger menu" class="dropDwnHeader__mobile-menu--img">
+    <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 0 32 32" width="40" class="dropDwnHeader__mobile-menu--img">
+      <path d="M4 10h24c1.1 0 2-0.9 2-2s-0.9-2-2-2H4C2.9 6 2 6.9 2 8S2.9 10 4 10zM28 14H4c-1.1 0-2 0.9-2 2s0.9 2 2 2h24c1.1 0 2-0.9 2-2S29.1 14 28 14zM28 22H4c-1.1 0-2 0.9-2 2s0.9 2 2 2h24c1.1 0 2-0.9 2-2S29.1 22 28 22z"
+        fill="white" />
+    </svg>
     <div class="dropDwnHeader__mobile-menu--container">
       <nav class="dropDwnHeader__mobile-menu">
         <ul>
           <li><a href="#about" class="dropDwnHeader__mobile-menu--a">about /</a></li>
           <li><a href="#services" class="dropDwnHeader__mobile-menu--a">services /</a></li>
-          <li><a href="#contact_form" class="dropDwnHeader__mobile-menu--a">contact</a></li>
+          <li><a href="#contact" class="dropDwnHeader__mobile-menu--a">contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main>
-    <a id="landing"></a>
-    <section class="landing">
+    <section class="landing" id="landing">
       <h1 class="landing__title">Comforting Touch</h1>
       <h3 class="landing__subheading">doula services</h3>
       <img class="landing__logo" src="images/ct_logo.png" alt="birds logo">
       <h3 class="landing__subheading">nanaimo, bc, canada</h3>
-      <a href="#section1">
+      <a href="#info">
         <div class="arrows"></div>
       </a>
-      <a id="section1"></a>
     </section>
 
-    <section class="section1">
+    <div id="info" class="anchor"></div>
 
-      <div class="section1--textbox">
-        <div class="section1--text">
+    <section class="info">
+      <div class="info--textbox">
+        <div class="info--text">
           <h2>What is a Doula?</h2>
           <p>“A trained professional who provides continuous physical, emotional and informational support to a mother
             before, during and shortly after childbirth to help her achieve the healthiest, most satisfying experience
@@ -59,8 +61,9 @@
           <p style="text-align:center">-www.dona.org</p>
         </div>
       </div>
-      <a id="services"></a>
     </section>
+
+    <div id="services" class="anchor"></div>
 
     <section class="services">
       <h2>What does a doula do?</h2>
@@ -95,11 +98,11 @@
           <p style="text-align:center">- Client</p>
         </div>
       </div>
-      <a id="about"></a>
     </section>
 
-    <section class="about">
+    <div id="about" class="anchor"></div>
 
+    <section class="about">
       <h2>About me</h2>
       <p>Each woman’s birth experience is uniquely her own, it is intimate and personal. As a Doula it is a privilege
         to share in the birth process with a woman and her partner. I have had the joy of sharing the birth experience
@@ -109,11 +112,11 @@
         desires as they bring their precious babies to life.</p>
       <p>Recently I completed the Dona birth doula training at Mothering
         Touch in Victoria and continue to pursue my Doula certification through Dona International.</p>
-      <a id="contact_form"></a>
     </section>
 
-    <section class="contact">
+    <div id="contact" class="anchor"></div>
 
+    <section class="contact">
       <form name="contact_form" action="contact-form.php" method="POST" class="contact__form">
         <h2>Contact</h2>
         <p class="contact__label">Name:</p>
@@ -137,7 +140,7 @@
   </main>
 
   <footer>
-    <a href="http://google.ca">Google</a>
+
   </footer>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
