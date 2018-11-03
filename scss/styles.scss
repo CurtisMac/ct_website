@@ -33,7 +33,7 @@ h2 {
 
 h3 {
   font-weight: 500;
-  font-family: 'Asap', sans-serif;
+  font-family: 'Gaegu', sans-serif;
   font-size: calc(0.5rem + 4.5vmin);
   margin: 0;
 }
@@ -133,6 +133,8 @@ $text_shadow:
       display: inline;
       padding: 0 4px 0 0;
       font-size: 28px;
+      font-weight: 500;
+      font-family: 'Gaegu', sans-serif;
     }
 
     a {
@@ -168,7 +170,8 @@ $text_shadow:
       display: inline;
       padding: 0;
       font-size: 25px;
-      font-style: oblique;
+      font-weight: 500;
+      font-family: 'Gaegu', sans-serif;
     }
 
     a {
